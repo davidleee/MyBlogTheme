@@ -3,10 +3,10 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /favicon.ico
+favicon: /favicon.jpg
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "davidlee, david, lee, iOS, Android, Developer, mobile"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -29,7 +29,7 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -39,10 +39,10 @@ seo: false
 menu:
   home: /
   #categories: /categories
-  #about: /about
   archives: /archives
   tags: /tags
-  #sitemap: /sitemap.xml
+  about: /about
+  # sitemap: /sitemap.xml
   #commonweal: /404.html
 
 
@@ -71,8 +71,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
+# scheme: Muse
+scheme: Mist
 #scheme: Pisces
 
 
@@ -133,8 +133,8 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  GitHub: https://github.com/davidleee
 
 
 # Social Links Icons
@@ -154,7 +154,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /avatar.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -205,6 +205,10 @@ sidebar:
 #links:
   #Title: http://example.com/
 
+reward_comment: 你的支持和鼓励，是我分享的最大动力！
+wechatpay: /uploads/wechatpay.jpeg
+alipay: /uploads/alipay.jpeg
+
 
 # ---------------------------------------------------------------
 # Post Settings
@@ -234,7 +238,7 @@ post_meta:
 post_wordcount:
   item_text: true
   wordcount: false
-  min2read: false
+  min2read: true
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -244,7 +248,7 @@ post_wordcount:
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -286,7 +290,7 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 40d9ab0962d30fc4482f8b32cd8d8de1
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -298,7 +302,7 @@ mathjax:
 #hypercomments_id:
 
 # Gentie productKey
-#gentie_productKey:
+gentie_productKey: 2ca9a647aaf24c8f8d6b0ff63d99da22
 
 # changyan
 changyan:
@@ -318,8 +322,8 @@ changyan:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
-##  type: button
+baidushare:
+ type: button
 
 # Share
 #jiathis:
@@ -388,15 +392,15 @@ vkontakte_api:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: rWbFyKbV9jV1Gm1Gplpfydst-gzGzoHsz
+  app_key: AeJ3NJoYXFmMj6k9LCFSR62a
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
@@ -406,7 +410,7 @@ busuanzi_count:
   site_pv_header: <i class="fa fa-eye"></i>
   site_pv_footer:
   # custom pv span for one page only
-  page_pv: true
+  page_pv: false
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
@@ -419,7 +423,7 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -451,7 +455,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
 
 # External URL with BASE64 encrypt & decrypt
 # Usage: {% exturl text url "title" %}
